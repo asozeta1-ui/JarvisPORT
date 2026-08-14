@@ -35,10 +35,9 @@ MODEL_DIR = os.environ.get("MODEL_DIR", ".")
 KOKORO_MODEL = os.path.join(MODEL_DIR, "kokoro-v1.0.onnx")
 KOKORO_VOICES = os.path.join(MODEL_DIR, "voices-v1.0.bin")
 
-# HuggingFace URLs for auto-download (Kokoro v1.0)
-HF_BASE = "https://huggingface.co/onnx-community/Kokoro-82M/resolve/main"
-MODEL_URL = os.environ.get("KOKORO_MODEL_URL", f"{HF_BASE}/kokoro-v1.0.onnx")
-VOICES_URL = os.environ.get("KOKORO_VOICES_URL", f"{HF_BASE}/voices-v1.0.bin")
+HF_BASE = "https://huggingface.co/hexgrad/Kokoro-82M/resolve/main"
+MODEL_URL = os.environ.get("KOKORO_MODEL_URL", "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx")
+VOICES_URL = os.environ.get("KOKORO_VOICES_URL", "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/voices-v1.0.bin")
 
 DEFAULT_VOICE = os.environ.get("KOKORO_VOICE", "em_alex")
 DEFAULT_LANG = os.environ.get("KOKORO_LANG", "es")
